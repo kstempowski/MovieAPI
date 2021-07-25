@@ -40,3 +40,4 @@ C:\Users\kenny\Documents\Grand Circus\Assignments\Week15\MovieLabAPI2\MovieLabAP
 C:\Users\kenny\Documents\Grand Circus\Assignments\Week15\MovieLabAPI2\MovieLabAPI\ReadingAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\kenny\Documents\Grand Circus\Assignments\Week15\MovieLabAPI2\MovieLabAPI\ReadingAPI\obj\Debug\netcoreapp3.1\Razor\Views\Movie\Index.cshtml.g.cs
 C:\Users\kenny\Documents\Grand Circus\Assignments\Week15\MovieLabAPI2\MovieLabAPI\ReadingAPI\obj\Debug\netcoreapp3.1\Razor\Views\Movie\MovieForm.cshtml.g.cs
+C:\Users\kenny\Documents\Grand Circus\Assignments\Week15\MovieLabAPI2\MovieLabAPI\ReadingAPI\obj\Debug\netcoreapp3.1\Razor\Views\Movie\MovieForm2.cshtml.g.cs

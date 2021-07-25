@@ -33,10 +33,10 @@ namespace ReadingAPI.Controllers
 
         public async Task<IActionResult> DeleteMovie(int id)
         {
-            if(ModelState.IsValid)
+            if (ModelState.IsValid)
             {
-            await _movies.DeleteMovie(id);
-            return RedirectToAction("Index");
+                await _movies.DeleteMovie(id);
+                return RedirectToAction("Index");
 
             }
             return View("Index");
@@ -46,13 +46,13 @@ namespace ReadingAPI.Controllers
         public async Task<IActionResult> EditMovie(int id)
         {
             var movie = await _movies.GetMovie(id);
-            if(movie.id == id)
+            if (movie.id == id)
             {
-            return View("MovieForm", movie.id);
+                return View("MovieForm", movie);
             }
             return View("Index");
         }
-       
+
 
         [HttpPost]
         public async Task<IActionResult> EditMovie(int id, Movie editedMovie)
@@ -60,7 +60,7 @@ namespace ReadingAPI.Controllers
             if (ModelState.IsValid)
             {
                 await _movies.EditMovie(id, editedMovie);
-                
+
 
             }
             return View("Index", editedMovie);

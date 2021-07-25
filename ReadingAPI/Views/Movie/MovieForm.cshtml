@@ -1,8 +1,9 @@
 ﻿@model Movie
 
 
-@if (Model.id != 0)
-{<form asp-action="EditMovie" method="post">
+@if (Model.id == 0)
+{
+    <form asp-action="SaveMovie" method="post">
         <label asp-for="title"></label>
         <input type="text" asp-for="title" value="@Model.title" />
         <br />
@@ -15,21 +16,21 @@
         <input type="submit" class="btn btn-dark" value="Save Movie" />
     </form>
 }
-else
+
+else if(Model.id != 0)
 {
-    <form asp-action="SaveMovie" method="post">
+    <form asp-action="EditMovie" method="post">
         <label asp-for="title"></label>
-        <input type="text" asp-for="title" value="" />
+        <input type="text" asp-for="title" value="@Model.title" />
         <br />
         <label asp-for="genre"></label>
-        <input type="text" asp-for="genre" value="" />
+        <input type="text" asp-for="genre" value="@Model.genre" />
         <br />
         <label asp-for="runtime"></label>
-        <input type="text" asp-for="runtime" value="" />
+        <input type="text" asp-for="runtime" value="@Model.runtime" />
         <br />
         <input type="submit" class="btn btn-dark" value="Save Movie" />
     </form>
 }
-
 
 

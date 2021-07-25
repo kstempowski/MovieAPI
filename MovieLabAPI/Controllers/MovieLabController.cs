@@ -59,7 +59,7 @@ namespace MovieLabAPI.Controllers
         #region Update
         //PUT: api/Movielab/{id}
         [HttpPut("{id}")]
-        public async Task<ActionResult<Movie>> EditMovie(int id, Movie movie)
+        public async Task<ActionResult> EditMovie(int id, Movie movie)
         {
             if (id != movie.Id || !ModelState.IsValid)
             {
